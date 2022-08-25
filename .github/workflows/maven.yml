@@ -19,7 +19,7 @@ jobs:
       with:
         java-version: 11
     - name : Run java test
-      run : mvn clean test
+      run : mvn test
        
 
 

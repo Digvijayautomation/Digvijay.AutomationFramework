@@ -22,7 +22,6 @@ jobs:
         java-version: '11'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
-
-      name: Run The Test
       run: mvn clean test
+
+

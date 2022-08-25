@@ -10,7 +10,7 @@ public final class logintest extends basetest { //Making it as final so no one c
 	private logintest(){} // Created private constructor so that no can can create object of it
 
 	
-	@Test(enabled=false)
+	@Test
 	public void Signin()
 	{	
 
@@ -23,7 +23,7 @@ public final class logintest extends basetest { //Making it as final so no one c
 	}
 	
 	
-	@Test(enabled=false)
+	@Test
 	public void Signout()
 	{	
 

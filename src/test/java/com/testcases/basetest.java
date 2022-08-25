@@ -12,14 +12,16 @@ public class basetest {
 	
 
 	@BeforeMethod
-	public void setUp() {
+	protected void setUp() throws Exception 
+	{
 		
 		drivers_setup.Driver_Intalization();
 		
 	}
 
 	@AfterMethod
-	public void tearDown() {
+	protected void tearDown() 
+	{
 		
 		drivers_setup.Driver_Quit();
 		

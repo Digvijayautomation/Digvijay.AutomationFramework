@@ -2,7 +2,7 @@ package com.testcases;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import com.driver.drivers_setup;
+import com.driver.driver_manager;
 
 
 public final class logintest extends basetest { //Making it as final so no one can extends it
@@ -11,16 +11,31 @@ public final class logintest extends basetest { //Making it as final so no one c
 
 	
 	@Test
-	public void Signin_Signout()
+	public void Signin()
 	{	
 
-		drivers_setup.driver.findElement(By.xpath("//a[@rel='nofollow']")).click();
-		drivers_setup.driver.findElement(By.id("email")).sendKeys("dtikka6@gmail.com");
-		drivers_setup.driver.findElement(By.id("passwd")).sendKeys("test@123");
-		drivers_setup.driver.findElement(By.id("SubmitLogin")).click();	
-		drivers_setup.driver.findElement(By.xpath("//*[contains(@title,'Log me out')]")).click();
+		driver_manager.getDriver().findElement(By.xpath("//a[@rel='nofollow']")).click();
+		driver_manager.getDriver().findElement(By.id("email")).sendKeys("dtikka6@gmail.com");
+		driver_manager.getDriver().findElement(By.id("passwd")).sendKeys("test@123");
+		driver_manager.getDriver().findElement(By.id("SubmitLogin")).click();	
+		
 		
 	}
+	
+	
+	@Test
+	public void Signout()
+	{	
+
+		driver_manager.getDriver().findElement(By.xpath("//a[@rel='nofollow']")).click();
+		driver_manager.getDriver().findElement(By.id("email")).sendKeys("dtikka6@gmail.com");
+		driver_manager.getDriver().findElement(By.id("passwd")).sendKeys("test@123");
+		driver_manager.getDriver().findElement(By.id("SubmitLogin")).click();	
+		driver_manager.getDriver().findElement(By.xpath("//*[contains(@title,'Log me out')]")).click();
+		
+	}
+	
+	
 	
 	
 	

@@ -3,7 +3,7 @@ package com.testcases;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import com.driver.drivers_setup;
+import com.driver.driver_manager;
 
 public final class homepagetest extends basetest { //Making it as final so no one can extends it
 	
@@ -12,13 +12,12 @@ public final class homepagetest extends basetest { //Making it as final so no on
 	
 	@Test
 	public void Signin_Click_Cart()
-	{	
-
-		drivers_setup.driver.findElement(By.xpath("//a[@rel='nofollow']")).click();
-		drivers_setup.driver.findElement(By.id("email")).sendKeys("dtikka6@gmail.com");
-		drivers_setup.driver.findElement(By.id("passwd")).sendKeys("test@123");
-		drivers_setup.driver.findElement(By.id("SubmitLogin")).click();	
-		drivers_setup.driver.findElement(By.xpath("//*[contains(@title,'View my shopping cart')]")).click();
+	{
+		driver_manager.getDriver().findElement(By.xpath("//a[@rel='nofollow']")).click();
+		driver_manager.getDriver().findElement(By.id("email")).sendKeys("dtikka6@gmail.com");
+		driver_manager.getDriver().findElement(By.id("passwd")).sendKeys("test@123");
+		driver_manager.getDriver().findElement(By.id("SubmitLogin")).click();	
+		driver_manager.getDriver().findElement(By.xpath("//*[contains(@title,'View my shopping cart')]")).click();
 		
 	}
 

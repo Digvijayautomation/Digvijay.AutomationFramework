@@ -3,7 +3,6 @@
 <suite name="Suite">
   <test thread-count="1" name="Test">
     <classes>
-     
       <class name="com.testcases.homepagetest"/>
       <class name="com.testcases.logintest"/>
     </classes>

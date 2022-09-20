@@ -17,9 +17,7 @@ public final class logintest extends basetest { //Making it as final so no one c
 		driver_manager.getDriver().findElement(By.xpath("//a[@rel='nofollow']")).click();
 		driver_manager.getDriver().findElement(By.id("email")).sendKeys("dtikka6@gmail.com");
 		driver_manager.getDriver().findElement(By.id("passwd")).sendKeys("test@123");
-		driver_manager.getDriver().findElement(By.id("SubmitLogin")).click();	
-		
-		
+		driver_manager.getDriver().findElement(By.id("SubmitLogin")).click();		
 	}
 	
 	

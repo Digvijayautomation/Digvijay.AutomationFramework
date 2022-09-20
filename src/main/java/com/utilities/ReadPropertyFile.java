@@ -4,6 +4,8 @@ import java.io.FileInputStream;
 import java.util.Objects;
 import java.util.Properties;
 
+import com.constants.framework_constants;
+
 public final class ReadPropertyFile {  //Making it as final so no one can extends it
 	
 	private ReadPropertyFile() {} // Created protected constructor so that no can can create object of it
@@ -15,7 +17,7 @@ public final class ReadPropertyFile {  //Making it as final so no one can extend
 	{
 		String value="";
 		Properties property=new Properties();
-		FileInputStream file=new FileInputStream(System.getProperty("user.dir")+ "/src/test/resources/configurations/config.properties");
+		FileInputStream file=new FileInputStream(framework_constants.getConfigpath()); // getting file path for constant file from framework constant
 		 property.load(file);
 		 value=property.getProperty(key);
 		 

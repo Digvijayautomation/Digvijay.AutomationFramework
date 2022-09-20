@@ -1,5 +1,4 @@
 package com.testcases;
-
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
@@ -18,6 +17,8 @@ public final class homepagetest extends basetest { //Making it as final so no on
 		driver_manager.getDriver().findElement(By.id("passwd")).sendKeys("test@123");
 		driver_manager.getDriver().findElement(By.id("SubmitLogin")).click();	
 		driver_manager.getDriver().findElement(By.xpath("//*[contains(@title,'View my shopping cart')]")).click();
+		
+		
 		
 	}
 

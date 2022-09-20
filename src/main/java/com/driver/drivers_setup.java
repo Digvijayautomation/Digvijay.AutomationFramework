@@ -11,7 +11,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public final class drivers_setup {
 	
-	private drivers_setup() {} // Making private constructor so that no one make object of it
+	private drivers_setup() {} // Making private constructor so that no one create object of it
 	
 	
 	public static void Driver_Intalization() throws Exception 

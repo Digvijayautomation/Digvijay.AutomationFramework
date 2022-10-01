@@ -6,8 +6,8 @@
       <class name="com.testcases.logintest">
         <methods>
           <include name="setUp"/>
-          <include name="Signin"/>
           <include name="tearDown"/>
+          <include name="Signout"/>
         </methods>
       </class> <!-- com.testcases.logintest -->
     </classes>

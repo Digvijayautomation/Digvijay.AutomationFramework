@@ -6,18 +6,10 @@
       <class name="com.testcases.logintest">
         <methods>
           <include name="setUp"/>
-          <include name="Signin"/>
           <include name="tearDown"/>
           <include name="Signout"/>
         </methods>
       </class> <!-- com.testcases.logintest -->
-      <class name="com.testcases.homepagetest">
-        <methods>
-          <include name="Signin_Click_Cart"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.testcases.homepagetest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

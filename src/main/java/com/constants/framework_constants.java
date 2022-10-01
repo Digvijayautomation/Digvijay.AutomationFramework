@@ -12,6 +12,4 @@ public final class framework_constants {  //Making it as final so no one can ext
 		return CONFIGPATH;
 	}
 
-
-
 }

@@ -2,10 +2,11 @@ package com.driver;
 
 import java.util.Objects;
 
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.utilities.ReadPropertyFile;
+import com.utilities.ReadPropertyFileUsingOwnerLibray;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -16,7 +17,7 @@ public final class drivers_setup {
 	
 	public static void Driver_Intalization() throws Exception 
 	{
-		
+		ReadPropertyFileUsingOwnerLibray config=ConfigFactory.create(ReadPropertyFileUsingOwnerLibray.class);// object of ReadPropertyFileUsingOwnerLibray for geeting the data from config.properties
 		
 		if(Objects.isNull(driver_manager.getDriver())) // if driver is null, then only initalize new driver
 		{
@@ -27,7 +28,7 @@ public final class drivers_setup {
 		driver_manager.setDriver(driver); 
 		
 		// Setting the driver to threadlocals get method from driver_manager class
-		driver_manager.getDriver().get(ReadPropertyFile.getvalue("URL")); // Getting URL from config.properties file using ReadPropertyFile
+		driver_manager.getDriver().get(config.link()); // Getting URL from config.properties file using ReadPropertyFile
 		driver_manager.getDriver().manage().window().maximize();
 		}
 

@@ -2,6 +2,7 @@
 <testng-results ignored="0" total="3" passed="0" failed="1" skipped="2">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2022-10-16T14:17:10 IST" name="Suite" finished-at="2022-10-16T14:17:21 IST" duration-ms="11613">
     <groups>
     </groups>
@@ -51,12 +52,37 @@ at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:6
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 at com.testcases.logintest.Signin(logintest.java:17)
+=======
+  <suite started-at="2022-10-14T20:17:30 IST" name="Default suite" finished-at="2022-10-14T20:17:33 IST" duration-ms="2495">
+    <groups>
+    </groups>
+    <test started-at="2022-10-14T20:17:30 IST" name="Default test" finished-at="2022-10-14T20:17:33 IST" duration-ms="2495">
+      <class name="com.testcases.logintest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testcases.logintest@2e6a8155]" started-at="2022-10-14T20:17:30 IST" name="setUp" finished-at="2022-10-14T20:17:32 IST" duration-ms="2033" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[null value in entry: url=null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:198)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+at com.driver.drivers_setup.Driver_Intalization(drivers_setup.java:31)
+at com.testcases.basetest.setUp(basetest.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
@@ -81,6 +107,65 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Signin()[pri:0, instance:com.testcases.logintest@2e6a8155]" started-at="2022-10-14T20:17:32 IST" name="Signin" finished-at="2022-10-14T20:17:32 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[null value in entry: url=null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:198)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+at com.driver.drivers_setup.Driver_Intalization(drivers_setup.java:31)
+at com.testcases.basetest.setUp(basetest.java:18)
+>>>>>>> ac450b49fd30b0a1ce5fbf75296a456bce057a9f
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+<<<<<<< HEAD
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+=======
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+>>>>>>> ac450b49fd30b0a1ce5fbf75296a456bce057a9f
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
@@ -206,6 +291,34 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
 at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1002)
 at com.driver.drivers_setup.Driver_Intalization(drivers_setup.java:32)
+=======
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Signin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.logintest@2e6a8155]" started-at="2022-10-14T20:17:32 IST" name="tearDown" finished-at="2022-10-14T20:17:32 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testcases.logintest@2e6a8155]" started-at="2022-10-14T20:17:32 IST" name="setUp" finished-at="2022-10-14T20:17:32 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Signout()[pri:0, instance:com.testcases.logintest@2e6a8155]" started-at="2022-10-14T20:17:32 IST" name="Signout" finished-at="2022-10-14T20:17:32 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[null value in entry: url=null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
+at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:198)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+at com.driver.drivers_setup.Driver_Intalization(drivers_setup.java:31)
+>>>>>>> ac450b49fd30b0a1ce5fbf75296a456bce057a9f
 at com.testcases.basetest.setUp(basetest.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -241,16 +354,25 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Signout -->
         <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.logintest@738dc9b]" started-at="2022-10-16T14:17:21 IST" name="tearDown" finished-at="2022-10-16T14:17:21 IST" duration-ms="0" status="SKIP">
+=======
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Signout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.logintest@2e6a8155]" started-at="2022-10-14T20:17:32 IST" name="tearDown" finished-at="2022-10-14T20:17:32 IST" duration-ms="0" status="SKIP">
+>>>>>>> ac450b49fd30b0a1ce5fbf75296a456bce057a9f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.testcases.logintest -->
       <class name="com.testcases.homepagetest">
+<<<<<<< HEAD
         <test-method is-config="true" signature="setUp()[pri:0, instance:com.testcases.homepagetest@72e5a8e]" started-at="2022-10-16T14:17:10 IST" name="setUp" finished-at="2022-10-16T14:17:19 IST" duration-ms="8770" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
@@ -352,6 +474,35 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [ff779fefc1763f649a21aa3401cc3a0b, maximizeCurrentWindow {}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\digvi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50259}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50259/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
 Session ID: ff779fefc1763f649a21aa3401cc3a0b
+=======
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testcases.homepagetest@1530c739]" started-at="2022-10-14T20:17:32 IST" name="setUp" finished-at="2022-10-14T20:17:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Signin_Click_Cart()[pri:0, instance:com.testcases.homepagetest@1530c739]" started-at="2022-10-14T20:17:32 IST" name="Signin_Click_Cart" finished-at="2022-10-14T20:17:32 IST" duration-ms="19" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@rel='nofollow']"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DIGVIJAY', ip: '192.168.1.11', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34ae65aaec4750d8eb42b2e41a47d9d6, findElement {using=xpath, value=//a[@rel='nofollow']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\digvi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59269}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59269/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 34ae65aaec4750d8eb42b2e41a47d9d6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@rel='nofollow']"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DIGVIJAY', ip: '192.168.1.11', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34ae65aaec4750d8eb42b2e41a47d9d6, findElement {using=xpath, value=//a[@rel='nofollow']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\digvi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59269}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59269/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 34ae65aaec4750d8eb42b2e41a47d9d6
+>>>>>>> ac450b49fd30b0a1ce5fbf75296a456bce057a9f
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -364,21 +515,33 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+<<<<<<< HEAD
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
 at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1002)
 at com.driver.drivers_setup.Driver_Intalization(drivers_setup.java:32)
 at com.testcases.basetest.setUp(basetest.java:18)
+=======
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at com.testcases.homepagetest.Signin_Click_Cart(homepagetest.java:15)
+>>>>>>> ac450b49fd30b0a1ce5fbf75296a456bce057a9f
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+<<<<<<< HEAD
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
 at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+=======
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+>>>>>>> ac450b49fd30b0a1ce5fbf75296a456bce057a9f
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
@@ -403,15 +566,23 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
+<<<<<<< HEAD
           </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Signin_Click_Cart -->
         <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.homepagetest@72e5a8e]" started-at="2022-10-16T14:17:19 IST" name="tearDown" finished-at="2022-10-16T14:17:19 IST" duration-ms="0" status="SKIP">
+=======
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Signin_Click_Cart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.homepagetest@1530c739]" started-at="2022-10-14T20:17:32 IST" name="tearDown" finished-at="2022-10-14T20:17:33 IST" duration-ms="379" status="PASS">
+>>>>>>> ac450b49fd30b0a1ce5fbf75296a456bce057a9f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.testcases.homepagetest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
